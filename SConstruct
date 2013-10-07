@@ -21,44 +21,20 @@ cpp_flags = []
 library_paths = []
 
 
-library_paths.append('/home/jarrett/projects/berkelium2/cef3/Release')
+#library_paths.append('/home/jarrett/projects/berkelium2/cef3/Release')
+library_paths.append('./lib')
 
 ### Set our required libraries
 libraries = [
 'cef',
 'cef_dll_wrapper',
-'GL',
-'GLU',
-'GLEW',
-'Xmu',
-'Xt',
-'SM',
-'ICE',
-'pthread',
-'gthread-2.0',
-'gtkglext-x11-1.0',
-'gdkglext-x11-1.0',
-'gtk-x11-2.0',
-'pangox-1.0',
-'X11',
-'gmodule-2.0',
-'gdk-x11-2.0',
-'atk-1.0',
-'gio-2.0',
-'pangoft2-1.0',
-'pangocairo-1.0',
-'gdk_pixbuf-2.0',
-'cairo',
-'pango-1.0',
-'freetype',
-'fontconfig',
-'gobject-2.0',
-'glib-2.0',
 'OgreMain'
 ]
 
-cpp_paths.append('/home/jarrett/projects/berkelium2/cef3')
-cpp_paths.append('/home/jarrett/projects/berkelium2/cef3/include')
+# pkg-config --cflags gtk+-2.0
+#cpp_paths.append('/home/jarrett/projects/berkelium2/cef3')
+#cpp_paths.append('/home/jarrett/projects/berkelium2/cef3/include')
+cpp_paths.append('/usr/local/include/cef3')
 cpp_paths.append('/home/jarrett/projects/ogre')
 cpp_paths.append('/usr/include/gtk-2.0')
 cpp_paths.append('/usr/lib/x86_64-linux-gnu/gtk-2.0/include')
@@ -66,18 +42,9 @@ cpp_paths.append('/usr/include/atk-1.0')
 cpp_paths.append('/usr/include/cairo')
 cpp_paths.append('/usr/include/gdk-pixbuf-2.0')
 cpp_paths.append('/usr/include/pango-1.0')
-cpp_paths.append('/usr/include/gio-unix-2.0')
 cpp_paths.append('/usr/include/glib-2.0')
 cpp_paths.append('/usr/lib/x86_64-linux-gnu/glib-2.0/include')
-cpp_paths.append('/usr/include/pixman-1')
-cpp_paths.append('/usr/include/freetype2')
-cpp_paths.append('/usr/include/libpng12')
-cpp_paths.append('/usr/include/harfbuzz')
-cpp_paths.append('/usr/include/gtkglext-1.0')
-cpp_paths.append('/usr/lib/gtkglext-1.0/include')
 
-#cpp_paths.append('/usr/include/gtkglext-1.0')
-#cpp_paths.append('/usr/lib/gtkglext-1.0/include')
 
 cpp_flags.append('-std=c++11')
 
