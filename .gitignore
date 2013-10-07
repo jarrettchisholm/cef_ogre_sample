@@ -1,3 +1,6 @@
 build/
 cef3/
+lib/
+
 .sconsign.dblite
+ogre.cfg
