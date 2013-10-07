@@ -2,13 +2,13 @@
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
-#include "cefclient/dom_test.h"
+#include "dom_test.h"
 
 #include <sstream>
 #include <string>
 
 #include "include/cef_dom.h"
-#include "cefclient/util.h"
+#include "util.h"
 
 namespace dom_test {
 

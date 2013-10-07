@@ -7,8 +7,8 @@
 #pragma once
 
 #include "include/cef_render_handler.h"
-#include "cefclient/client_handler.h"
-#include "cefclient/osrenderer.h"
+#include "client_handler.h"
+#include "osrenderer.h"
 
 class OSRBrowserProvider {
  public:

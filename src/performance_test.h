@@ -6,7 +6,7 @@
 #define CEF_TESTS_CEFCLIENT_PERFORMANCE_TEST_H_
 #pragma once
 
-#include "cefclient/client_app.h"
+#include "client_app.h"
 
 namespace performance_test {
 

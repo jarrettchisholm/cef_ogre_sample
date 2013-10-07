@@ -6,7 +6,7 @@
 #define CEF_TESTS_CEFCLIENT_WINDOW_TEST_H_
 #pragma once
 
-#include "cefclient/client_handler.h"
+#include "client_handler.h"
 
 namespace window_test {
 

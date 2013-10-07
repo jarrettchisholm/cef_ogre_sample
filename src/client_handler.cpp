@@ -2,7 +2,7 @@
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
-#include "cefclient/client_handler.h"
+#include "client_handler.h"
 #include <stdio.h>
 #include <algorithm>
 #include <set>
@@ -18,15 +18,15 @@
 #include "include/cef_trace.h"
 #include "include/cef_url.h"
 #include "include/wrapper/cef_stream_resource_handler.h"
-#include "cefclient/binding_test.h"
-#include "cefclient/cefclient.h"
-#include "cefclient/client_renderer.h"
-#include "cefclient/client_switches.h"
-#include "cefclient/dialog_test.h"
-#include "cefclient/dom_test.h"
-#include "cefclient/resource_util.h"
-#include "cefclient/string_util.h"
-#include "cefclient/window_test.h"
+#include "binding_test.h"
+#include "cefclient.h"
+#include "client_renderer.h"
+#include "client_switches.h"
+#include "dialog_test.h"
+#include "dom_test.h"
+#include "resource_util.h"
+#include "string_util.h"
+#include "window_test.h"
 
 namespace {
 

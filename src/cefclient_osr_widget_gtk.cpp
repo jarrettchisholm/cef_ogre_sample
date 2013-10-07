@@ -2,7 +2,7 @@
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
-#include "cefclient/cefclient_osr_widget_gtk.h"
+#include "cefclient_osr_widget_gtk.h"
 
 // This value is defined in build/common.gypi and must be undefined here
 // in order for gtkglext to compile.
@@ -16,7 +16,7 @@
 #include <GL/gl.h>
 
 #include "include/cef_runnable.h"
-#include "cefclient/util.h"
+#include "util.h"
 
 namespace {
 

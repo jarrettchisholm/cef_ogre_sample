@@ -2,7 +2,7 @@
 // reserved. Use of this source code is governed by a BSD-style license
 // that can be found in the LICENSE file.
 
-#include "cefclient/osrenderer.h"
+#include "osrenderer.h"
 
 #if defined(OS_WIN)
 #include <gl/gl.h>
@@ -16,7 +16,7 @@
 #error Platform is not supported.
 #endif
 
-#include "cefclient/util.h"
+#include "util.h"
 
 #ifndef GL_BGR
 #define GL_BGR 0x80E0

@@ -6,7 +6,7 @@
 #define CEF_TESTS_CEFCLIENT_DIALOG_TEST_H_
 #pragma once
 
-#include "cefclient/client_handler.h"
+#include "client_handler.h"
 
 namespace dialog_test {
 

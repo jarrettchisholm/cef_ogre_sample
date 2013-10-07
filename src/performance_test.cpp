@@ -2,13 +2,13 @@
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
-#include "cefclient/performance_test.h"
+#include "performance_test.h"
 
 #include <algorithm>
 #include <string>
 
 #include "include/wrapper/cef_stream_resource_handler.h"
-#include "cefclient/performance_test_setup.h"
+#include "performance_test_setup.h"
 
 namespace performance_test {
 

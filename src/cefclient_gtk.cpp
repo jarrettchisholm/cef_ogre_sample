@@ -11,16 +11,16 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string>
-#include "cefclient/cefclient.h"
+#include "cefclient.h"
 #include "include/cef_app.h"
 #include "include/cef_browser.h"
 #include "include/cef_frame.h"
 #include "include/cef_runnable.h"
-#include "cefclient/cefclient_osr_widget_gtk.h"
-#include "cefclient/client_handler.h"
-#include "cefclient/client_switches.h"
-#include "cefclient/scheme_test.h"
-#include "cefclient/string_util.h"
+#include "cefclient_osr_widget_gtk.h"
+#include "client_handler.h"
+#include "client_switches.h"
+#include "scheme_test.h"
+#include "string_util.h"
 
 char szWorkingDir[512];  // The current working directory
 
