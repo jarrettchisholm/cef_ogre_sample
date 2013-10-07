@@ -26,6 +26,7 @@ library_paths.append('/home/jarrett/projects/berkelium2/cef3/Release')
 ### Set our required libraries
 libraries = [
 'cef',
+'cef_dll_wrapper',
 'GL',
 'GLU',
 'GLEW',
@@ -52,10 +53,13 @@ libraries = [
 'freetype',
 'fontconfig',
 'gobject-2.0',
-'glib-2.0'
+'glib-2.0',
+'OgreMain'
 ]
 
 cpp_paths.append('/home/jarrett/projects/berkelium2/cef3')
+cpp_paths.append('/home/jarrett/projects/berkelium2/cef3/include')
+cpp_paths.append('/home/jarrett/projects/ogre')
 cpp_paths.append('/usr/include/gtk-2.0')
 cpp_paths.append('/usr/lib/x86_64-linux-gnu/gtk-2.0/include')
 cpp_paths.append('/usr/include/atk-1.0')
@@ -75,6 +79,8 @@ cpp_paths.append('/usr/lib/gtkglext-1.0/include')
 #cpp_paths.append('/usr/include/gtkglext-1.0')
 #cpp_paths.append('/usr/lib/gtkglext-1.0/include')
 
+cpp_flags.append('-std=c++11')
+
 ### Create our environment
 env = Environment(ENV = os.environ, CCFLAGS=[]) 
 
@@ -84,6 +90,9 @@ env.Append( CPPDEFINES = cpp_defines )
 env.Append( CPPPATH = cpp_paths )
 
 env.SetOption('num_jobs', multiprocessing.cpu_count())
+
+### Set our runtime library locations
+env.Append( RPATH = env.Literal(os.path.join('\\$$ORIGIN', os.pardir, 'lib')))
 
 
 
